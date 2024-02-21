@@ -162,7 +162,7 @@ def is_folder_ok(folder):
     return hasPassed
 
 def has_won(uwu, haha):
-    return haha in uwu.text
+    return haha + " won holy fuck" in uwu.text
 
 def announce_win():
     whoTheFuckWon = os.getlogin()
@@ -175,7 +175,7 @@ def announce_win():
         getGuyRankedLmao = 1
         for obj in uwu.json():
             bozo = obj['content']
-            if whoTheFuckWon in bozo:
+            if whoTheFuckWon + " won" in bozo:
                 break
             getGuyRankedLmao += 1
         getGuyRankedLmao = len(uwu.json()) - getGuyRankedLmao + 1
