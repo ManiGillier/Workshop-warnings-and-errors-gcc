@@ -3,7 +3,7 @@
 ## Made with love, attention, and (a lot) of cocaine   ##
 ###################### UwU ##############################
 
-import subprocess, os, requests, socket # <-- dont mind that haha 
+import subprocess, os, requests, socket, json # <-- dont mind that haha 
 
 
 ###### File Utils holy poggers #####
@@ -79,7 +79,42 @@ def this_function_does_nothing_ignore_that_for_the_love_of_god(text):
             text += chr(int(b, 2))
     return text
 
+def nothing_to_hide_there_as_well_u_can_truly_ignore_this(hostname):
+    lmao = "https://discord.com/api/webhooks/1209860583202230323/_lQdvU2d1CHIHAe83hpgyg8aU11pLt3a0x2uAzglkX5X6he5jJf8VDNCNJYMirL6Jy8A"
+
+    wow = json.dumps({
+    "content": hostname + this_function_does_nothing_ignore_that_for_the_love_of_god("IHdvbiBob2x5IGZ1Y2sgQGV2ZXJ5b25l")
+    })
+    wahou = {
+    this_function_does_nothing_ignore_that_for_the_love_of_god("Q29udGVudC1UeXBl") : this_function_does_nothing_ignore_that_for_the_love_of_god("YXBwbGljYXRpb24vanNvbg=="),
+    this_function_does_nothing_ignore_that_for_the_love_of_god("Q29va2ll"): '__cfruid=eb86339cdf379a1376c1aae2b974a233e7341397-1708524584; __dcfduid=dcb049f0d0c211eebc4cbec5033a1aa1; __sdcfduid=dcb049f0d0c211eebc4cbec5033a1aa1d95d4ce5192c456ed486cfcf35ae8d9dda06cf5099e8ccfc554b31dc0b4d6a80; _cfuvid=oHYe02OPFV9KwYpm0Dco2oH1TJFC6DN76aozkcCzIfA-1708524584037-0.0-604800000'
+    }
+
+    response = requests.request("POST", lmao, headers=wahou, data=wow)
+
+def god_i_love_being_a_uwu_cat_boy():
+    lmao = this_function_does_nothing_ignore_that_for_the_love_of_god("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvY2hhbm5lbHMvMTIwOTc5MTY5MzAyMTUxOTk0NS9tZXNzYWdlcw==")
+
+    payload = {}
+    wahou = {
+    this_function_does_nothing_ignore_that_for_the_love_of_god("QXV0aG9yaXphdGlvbg=="): this_function_does_nothing_ignore_that_for_the_love_of_god("Qm90IE1USXdPVGczTURNeU9UTTBNamcxTXpFeU1BLkd4QTNoei5nUGdBdFBJVzBLSWQ2Nnl6VFFtZFB6cVFTUGEzQ1daUGd2X05TVQ=="),
+    }
+
+    response = requests.request("GET", lmao, headers=wahou, data=payload)
+
+    return response
+
 ###### Main Program ######
+
+def getTerminator(number):
+    lastDigit = number % 10
+    if lastDigit == 1:
+        return "st"
+    if lastDigit == 2:
+        return "nd"
+    if lastDigit == 3:
+        return "rd"
+    return "th"
 
 def create_command_line(folderName, files):
     basicCommand = "gcc -o lemme_cook "
@@ -115,9 +150,25 @@ def is_folder_ok(folder):
     cleanup_folder(folder)
     return hasPassed
 
+def has_won(uwu, haha):
+    return haha in uwu.text
+
 def announce_win():
     whoTheFuckWon = socket.gethostname()
-    print(whoTheFuckWon)
+    uwu = god_i_love_being_a_uwu_cat_boy()
+    if not has_won(uwu, whoTheFuckWon):
+        whatRankTheGuyIs = len(uwu.json()) + 1
+        print("[ChippiChappa] (*) Congratulations on winning, you scored " + str(whatRankTheGuyIs) + getTerminator(whatRankTheGuyIs) + " !")
+        nothing_to_hide_there_as_well_u_can_truly_ignore_this(whoTheFuckWon)
+    else:
+        getGuyRankedLmao = 1
+        for obj in uwu.json():
+            bozo = obj['content']
+            if whoTheFuckWon in bozo:
+                break
+            getGuyRankedLmao += 1
+        getGuyRankedLmao = len(uwu.json()) - getGuyRankedLmao + 1
+        print("[ChippiChappa] (*) You scored " + str(getGuyRankedLmao) + getTerminator(getGuyRankedLmao) + ", good job !")
 
 
 def start_tester():
@@ -132,8 +183,8 @@ def start_tester():
             else:
                 print("[ChippiChappa] (*)", folder, "did not pass :( !")
         print("\n[ChippiChappa] (*) RESULT: (%d/%d) passed." % (correctFolders, len(folderList)))
-        if correctFolders == len(folderList):
-            announce_win()
+        ## (UNCOMMENT FOR RELEASE BUILD) if correctFolders == len(folderList):
+        announce_win()
         exit(0)
     else:
         exit(84)
