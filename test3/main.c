@@ -1,11 +1,16 @@
 /*
 ** EPITECH PROJECT, 2024
-** TestX
+** Test3
 ** File description:
 ** main
 */
 
-int main(void)
+#include <stdio.h>
+
+int main (void)
 {
+    char *salut = "salut";
+    
+    printf("%c", salut);
     return 0;
 }

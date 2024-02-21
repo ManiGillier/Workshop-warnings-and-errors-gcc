@@ -1,12 +1,13 @@
 ##
 ## EPITECH PROJECT, 2024
-## TestX
+## Test15
 ## File description:
 ## build
 ##
 
 SRC	:=	\
 		main.c	\
+		strlen.c	\
 
 CC	:=	gcc
 

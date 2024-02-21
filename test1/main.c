@@ -1,11 +1,14 @@
 /*
 ** EPITECH PROJECT, 2024
-** TestX
+** Test1
 ** File description:
 ** main
 */
 
-int main(void)
+#include <stdio.h>
+
+int mian(void)
 {
+    printf("Hello, world !\n");
     return 0;
 }

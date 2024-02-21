@@ -1,6 +1,6 @@
 ##
 ## EPITECH PROJECT, 2024
-## TestX
+## Test16
 ## File description:
 ## build
 ##
@@ -15,6 +15,8 @@ OBJ	:=	$(SRC:.c=.o)
 NAME	:=	a.out
 
 CFLAGS :=	\
+		-Wall	\
+		-Wextra	\
 
 CPPFLAGS :=	\
 

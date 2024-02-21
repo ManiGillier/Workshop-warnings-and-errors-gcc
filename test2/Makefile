@@ -1,6 +1,6 @@
 ##
 ## EPITECH PROJECT, 2024
-## TestX
+## Test2
 ## File description:
 ## build
 ##

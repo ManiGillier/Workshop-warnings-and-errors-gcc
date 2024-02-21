@@ -1,6 +1,6 @@
 ##
 ## EPITECH PROJECT, 2024
-## TestX
+## Test11
 ## File description:
 ## build
 ##
@@ -15,16 +15,18 @@ OBJ	:=	$(SRC:.c=.o)
 NAME	:=	a.out
 
 CFLAGS :=	\
+		-Wall	\
+		-Wextra	\
 
 CPPFLAGS :=	\
 
 all: $(NAME)
 
 %.o:	%.c
-	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(LIBFLAGS) $< -o $@
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(CPPFLAGS) $(LIBFLAGS) $^ -o $@
+	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@
 
 clean:
 	rm -f $(OBJ)

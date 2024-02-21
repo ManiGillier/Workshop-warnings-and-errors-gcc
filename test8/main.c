@@ -1,11 +1,13 @@
 /*
 ** EPITECH PROJECT, 2024
-** TestX
+** Test8
 ** File description:
 ** main
 */
 
 int main(void)
 {
+    int fd = open("test", O_CREAT);
+    close(fd);
     return 0;
 }

@@ -1,11 +1,17 @@
 /*
 ** EPITECH PROJECT, 2024
-** TestX
+** Test7
 ** File description:
 ** main
 */
 
-int main(void)
+#include <stdio.h>
+
+int main (char **, int argc)
 {
-    return 0;
+    if (argc == 1) {
+        puts("I'm here");
+        return 0;
+    }
+    return 1;
 }

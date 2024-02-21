@@ -1,11 +1,13 @@
 /*
 ** EPITECH PROJECT, 2024
-** TestX
+** Test5
 ** File description:
 ** main
 */
 
-int main(void)
+int main (int ac, char **)
 {
-    return 0;
+    if (argc == 1)
+        return 0;
+    return 1;
 }

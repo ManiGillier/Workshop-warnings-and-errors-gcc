@@ -1,11 +1,13 @@
 /*
 ** EPITECH PROJECT, 2024
-** TestX
+** Test15
 ** File description:
 ** main
 */
 
-int main(void)
+#include "my.h"
+
+int main()
 {
-    return 0;
+    return my_strlen("Gg! you finished it ! Or maybe you have a warning ? You will do it :)");
 }
