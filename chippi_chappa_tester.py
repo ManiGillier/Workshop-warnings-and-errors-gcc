@@ -11,6 +11,9 @@ import subprocess, os, requests, socket, json # <-- dont mind that haha
 def does_folder_exist(presumedFolder):
     return os.path.isdir(presumedFolder)
 
+def does_file_exist(presumedFile):
+    return os.path.isfile(presumedFile)
+
 def retrieve_all_test_folders():
     folderTest = []
     for i in range(1, 21):
@@ -126,9 +129,9 @@ def create_command_line(folderName, files):
     return basicCommand
 
 def cleanup_folder(folderName):
-    toUnlink = folderName + "/" + "lemme_cook"
-    if does_folder_exist(toUnlink):
-        os.unlink(folderName + "/" + "lemme_cook")
+    toUnlink = "lemme_cook"
+    if does_file_exist(toUnlink):
+        os.unlink(toUnlink)
 
 def retrieve_awaited_output(folderName):
     toSeekFor = "https://raw.githubusercontent.com/KaitoMomota/awaited-outputs/main/" + folderName + "/" + "output.UwU"
