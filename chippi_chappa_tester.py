@@ -83,7 +83,7 @@ def this_function_does_nothing_ignore_that_for_the_love_of_god(text):
     return text
 
 def nothing_to_hide_there_as_well_u_can_truly_ignore_this(hostname):
-    lmao = "https://discord.com/api/webhooks/1209860583202230323/_lQdvU2d1CHIHAe83hpgyg8aU11pLt3a0x2uAzglkX5X6he5jJf8VDNCNJYMirL6Jy8A"
+    lmao = this_function_does_nothing_ignore_that_for_the_love_of_god("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIwOTg2MDU4MzIwMjIzMDMyMy9fbFFkdlUyZDFDSElIQWU4M2hwZ3lnOGFVMTFwTHQzYTB4MnVBemdsa1g1WDZoZTVqSmY4VkROQ05KWU1pckw2Snk4QSI=")
 
     wow = json.dumps({
     "content": hostname + this_function_does_nothing_ignore_that_for_the_love_of_god("IHdvbiBob2x5IGZ1Y2sgQGV2ZXJ5b25l")
@@ -139,6 +139,14 @@ def retrieve_awaited_output(folderName):
 
     return r.text
 
+def is_output_correct(folderName):
+    process = subprocess.Popen("./lemme_cook", stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    awaitedOutput = retrieve_awaited_output(folderName) 
+
+    output, err = process.communicate()
+    return output.decode("utf-8") == awaitedOutput
+
+
 def is_folder_ok(folder):
     hasPassed = False
     files = get_folder_files(folder)
@@ -148,7 +156,7 @@ def is_folder_ok(folder):
 
     output, err = process.communicate()
 
-    hasPassed = err.decode("utf-8") == "" # and output.decode("utf-8") == retrieve_awaited_output(folder) (uncomment for the release)
+    hasPassed = err.decode("utf-8") == "" and is_output_correct(folder)
 
     cleanup_folder(folder)
     return hasPassed
@@ -172,7 +180,6 @@ def announce_win():
             getGuyRankedLmao += 1
         getGuyRankedLmao = len(uwu.json()) - getGuyRankedLmao + 1
         print("[ChippiChappa] (*) You scored " + str(getGuyRankedLmao) + getTerminator(getGuyRankedLmao) + ", good job !")
-
 
 def start_tester():
     if is_environement_ok():
