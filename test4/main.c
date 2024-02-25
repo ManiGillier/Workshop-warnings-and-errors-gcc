@@ -7,7 +7,7 @@
 
 int main(void)
 {
-    char salut = "salut";
+    char salut = "salut\n";
 
     puts(salut);
     return 0;

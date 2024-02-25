@@ -5,8 +5,8 @@
 ** main
 */
 
-#include "my.h"
 #include <stdio.h>
+#include "my.h"
 
 int main (void)
 {

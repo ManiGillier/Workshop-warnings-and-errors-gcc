@@ -9,7 +9,7 @@ int main (void)
 {
     char str[20];
     
-    strcpy(str, "salut");
+    strcpy(str, "salut\n");
     puts(str);
     return 0;
 }

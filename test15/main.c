@@ -9,5 +9,8 @@
 
 int main()
 {
-    return my_strlen("Gg! you finished it ! Or maybe you have a warning ? You will do it :)");
+    char *str = "Gg! you finished it ! Or maybe you have a warning ? You will do it :)";
+    puts(str);
+
+    return my_strlen(str);
 }

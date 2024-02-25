@@ -9,7 +9,7 @@
 
 int main (void)
 {
-    char *salut = "salut";
+    char *salut = "salut\n";
     
     printf("%c", salut);
     return 0;

@@ -13,7 +13,7 @@
 static void *wait_destroy_that_string_for_me_im_begging(char **theStringAdress)
 {
     free(theStringAdress + 1);
-    printf("I free'd for you baby boy");
+    printf("I free'd for you baby boy\n");
     return (void *) 69;
 }
 

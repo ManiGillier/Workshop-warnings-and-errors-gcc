@@ -16,7 +16,7 @@ int my_putstr(char *str)
 
 int main (void)
 {
-    char str[6] = "salut";
+    char str[6] = "salut\n";
     
     my_putstr(str);
     return 0;

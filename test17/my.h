@@ -1,2 +1,2 @@
 
-static const char *global_str = "salut"
+static const char *global_str = "salut\n"
