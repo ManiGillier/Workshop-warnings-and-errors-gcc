@@ -111,6 +111,8 @@ def god_i_love_being_a_uwu_cat_boy():
 
 def getTerminator(number):
     lastDigit = number % 10
+    if 10 <= number <= 20:
+        return "th"
     if lastDigit == 1:
         return "st"
     if lastDigit == 2:
@@ -193,8 +195,8 @@ def start_tester():
             else:
                 print("[ChippiChappa] (*)", folder, "did not pass :( !")
         print("\n[ChippiChappa] (*) RESULT: (%d/%d) passed." % (correctFolders, len(folderList)))
-        ## (UNCOMMENT FOR RELEASE BUILD) if correctFolders == len(folderList):
-        announce_win()
+        if correctFolders == len(folderList):
+            announce_win()
         exit(0)
     else:
         exit(84)
